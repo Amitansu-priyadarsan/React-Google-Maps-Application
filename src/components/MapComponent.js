@@ -1,4 +1,4 @@
-// googleMapsApiKey="AIzaSyC0qGWSzhm9Cifg3f_0LzHuP1WiKSw0rj4" 
+// googleMapsApiKey
 
 import React, { useEffect, useState } from 'react';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
@@ -26,7 +26,7 @@ const MapComponent = ({ location }) => {
     <div>
       {errorMessage && <p>{errorMessage}</p>}
       {!errorMessage && (
-        <LoadScript googleMapsApiKey="AIzaSyC0qGWSzhm9Cifg3f_0LzHuP1WiKSw0rj4" >
+        <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY} >
           <GoogleMap
             mapContainerStyle={containerStyle}
             center={{ lat: parseFloat(location.lat), lng: parseFloat(location.lng) }}
