@@ -1,0 +1,62 @@
+.profile-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-info {
+    margin-bottom: 10px;
+}
+
+.profile-info h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+.profile-info p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Updated Summary button styling */
+button {
+    padding: 12px 24px;  /* More padding for a more prominent button */
+    margin-top: 20px;  /* Adds space between profile details and button */
+    border: none;
+    background-color: #3f51b5;  /* Primary color */
+    color: white;
+    border-radius: 30px;  /* A smooth rounded button */
+    font-size: 16px;
+    font-weight: 600;  /* Bold text */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Subtle shadow */
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Hover effect for better user interaction */
+button:hover {
+    background-color: #303f9f;  /* Slightly darker shade when hovered */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);  /* Stronger shadow */
+}
+
+/* Active state for the button to make it feel more interactive */
+button:active {
+    transform: scale(0.98);  /* Slight shrink effect when clicked */
+}

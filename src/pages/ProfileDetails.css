@@ -1,0 +1,129 @@
+
+.profile-details-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out forwards;
+    transition: all 0.3s ease-in-out;
+}
+
+.profile-details-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.profile-name {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+}
+
+.profile-name:hover {
+    color: #007bff;
+}
+
+.profile-description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    letter-spacing: 0.5px;
+}
+
+.profile-location {
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.profile-location:hover {
+    background-color: #bbdefb;
+}
+
+.profile-location h3 {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.profile-location p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
+
+/* Button Styles */
+.homepage-button {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 30px;
+}
+
+.homepage-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px);
+}
+
+.homepage-button:focus {
+    outline: none;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .profile-details-container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .profile-name {
+        font-size: 2rem;
+    }
+
+    .profile-description {
+        font-size: 1rem;
+    }
+
+    .profile-location h3 {
+        font-size: 1.4rem;
+    }
+
+    .profile-location p {
+        font-size: 1rem;
+    }
+
+    .homepage-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
